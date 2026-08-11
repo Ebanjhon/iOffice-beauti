@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+.app {
+    width: 280px;
+    padding: 20px;
+}
+
+.name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.version {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #777;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+.author {
+    text-align: center;
+    margin-top: 16px;
+
+    font-size: 13px;
+    color: #666;
+}
+
+
+/* Toggle */
+
+.switch {
+    position: relative;
+    display: inline-block;
+
+    width: 42px;
+    height: 24px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+
+    cursor: pointer;
+
+    background: #ccc;
+    border-radius: 30px;
+
+    transition: 0.2s;
+}
+
+.slider::before {
+    content: "";
+
+    position: absolute;
+
+    width: 18px;
+    height: 18px;
+
+    left: 3px;
+    top: 3px;
+
+    background: white;
+    border-radius: 50%;
+
+    transition: 0.2s;
+}
+
+input:checked + .slider {
+    background: #2196f3;
+}
+
+input:checked + .slider::before {
+    transform: translateX(18px);
+}

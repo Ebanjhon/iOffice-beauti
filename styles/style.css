@@ -1,0 +1,8 @@
+/* ẩn con xoay chết tiệt */
+/* .pace-activity {
+    display: none !important;
+} */
+#div_ketthuc_vb_hangloat .class_xuly_uyquyen,
+#vbdi_div_ketthuc_vb_hangloat .class_xuly_uyquyen {
+    background-color: #dc3545 !important;
+}
