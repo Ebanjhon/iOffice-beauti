@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "iOffice Excel to PDF",
+    "version": "1.1.0",
+    "description": "Bổ sung chức năng Chuyển PDF cho file Excel trên iOffice",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://ioffice.vnptdaklak.vn/*",
+                "https://vpdt.daklak.gov.vn/*"
+            ],
+            "js": [
+                "inject.js"
+            ],
+            "run_at": "document_idle",
+            "world": "MAIN"
+        }
+    ]
+}
